@@ -1,0 +1,101 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+}
+
+/* Layout Flexbox */
+.signup-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url(pr.jpeg);
+   background-size: cover;
+  background-attachment: fixed;
+}
+
+.signup-form-section {
+  background: rgba(255, 255, 255, 0.8); /* Light hazy effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Box shadow */
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  backdrop-filter: blur(8px); /* Smooth background blur */
+}
+
+.signup-form-section h1 {
+  font-size: 2rem;
+  color: #ff6600; /* Orange color */
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0; /* Plus d'espace entre les champs */
+  border: 1px solid #ffcc00; /* Yellow border */
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+  outline: none;
+  border-color: #ff6600; /* Orange border on focus */
+}
+
+/* Error messages */
+.error {
+  color: #ff0000; /* Red color for errors */
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Button */
+button{
+  background: linear-gradient(to right, yellow, orange); /* Gradient jaune à orange */
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+   
+}
+
+button:hover {
+  background: linear-gradient(to right, orange, yellow); /* Inverser le gradient au survol */
+}
+
+button:active {
+  background: #e65c00; /* Orange foncé lors du clic */
+}
+
+/* Signup link */
+.login-link {
+  color: #ffcc00; /* Yellow color */
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.login-link:hover {
+  color: #ff6600; /* Orange color on hover */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .signup-form-section {
+    width: 80%; /* Plus large sur les petits écrans */
+  }
+}
