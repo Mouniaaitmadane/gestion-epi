@@ -1,8 +1,8 @@
 # Gestion des Équipements de Protection Individuelle (App EPI)
 
 ## Description
-Ce projet est une application web pour la gestion des équipements de protection individuelle (EPI).  
-Elle permet de suivre les stocks, gérer les dotations et retours aux employés, et produire des rapports.
+Ce projet est une application web complète (full-stack) pour gérer les équipements de protection individuelle (EPI) dans une entreprise.  
+Il permet de suivre les stocks, gérer les dotations et les retours, administrer le personnel, et produire des rapports dynamiques.
 
 ## Fonctionnalités principales
 - Suivi des stocks par dates et quantités  
@@ -11,7 +11,19 @@ Elle permet de suivre les stocks, gérer les dotations et retours aux employés,
 - Gestion des produits et catégories  
 - Tableau de bord avec statistiques et rapports  
 - Gestion des utilisateurs avec rôles (administrateur, utilisateur)  
-- Interfaces réactives développées avec React.js, Material-UI et TailwindCSS
+## 🛠️ Technologies utilisées
+
+### Frontend:
+- React.js  
+- TailwindCSS  
+- Material-UI
+
+### Backend:
+- Node.js  
+- Express.js
+- Postman
+- SQL Serveur
+
 
 ## Installation
 
@@ -20,12 +32,15 @@ Elle permet de suivre les stocks, gérer les dotations et retours aux employés,
 ```bash
 git clone https://github.com/Mouniaaitmadane/gestion-epi.git
 
-2.Aller dans le dossier du projet:
-cd App EPI/reactApp
-
-3.Installer les dépendances:
+2.Lancer le Backend (Express.js):
+cd nodeStarter
 npm install
-
-4.Lancer l'application:
 npm start
+
+
+3.Lancer le Frontend (React.js):
+cd reactApp
+npm install
+npm start
+
 
